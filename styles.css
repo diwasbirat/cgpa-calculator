@@ -1,0 +1,96 @@
+body {
+    font-family: emoji;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: burlywood;
+}
+.containter{
+    border: ridge;
+    border-width: 11px;
+    padding: 21px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+table {
+    grid-column: 1 / span 3;
+    width: 100%;
+}
+
+thead {
+    background: aquamarine;
+    text-align: center;
+    }
+
+tr {
+    display: flex;
+    justify-content: space-evenly;
+}
+button {
+    grid-column: 1 / span 3;
+    margin-top: 1rem;
+    border-radius: 76px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4CAF50;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    box-shadow: 0 0 0 2px #4CAF50;
+}
+
+input[type="text"]:invalid,
+input[type="number"]:invalid {
+    border: 1px solid grey;
+}
+
+input[type="text"]:valid,
+input[type="number"]:valid {
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:placeholder-shown,
+input[type="number"]:placeholder-shown {
+    opacity: 0.5;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #ccc;
+}
+
+#gpa-result {
+    grid-column: 1 / span 3;
+    margin-top: 1rem;
+    color: #4CAF50;
+    text-align: center;
+    font-weight: bold;
+}
+select {
+    border: ridge;
+    height: -webkit-fill-available;
+    width: 73px;
+}
